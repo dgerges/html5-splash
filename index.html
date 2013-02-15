@@ -1,0 +1,68 @@
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0; user-scalable=no;" />	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+<style>
+body {
+	background-color:00a7de;
+}
+
+@-webkit-keyframes resize {
+  0% {
+    width: 160px;
+  }
+  50% {
+    width: 120px;
+  }
+  100% {
+    width: 160px;
+  }
+}
+
+@-webkit-keyframes movetext {
+  
+  0% {
+  }
+
+  100% {
+	-webkit-transform: rotateZ(180deg) translateX(360px);
+  }
+
+}
+
+#container {
+
+	position:absolute;
+	width:100%;
+	top:40%;
+}
+
+#logo {
+	-webkit-animation-name: resize;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	margin:0 auto;
+	display:block;
+}
+
+p {
+	position:absolute;
+	display:block;
+	-webkit-animation-name: movetext;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	color:white;
+}
+
+</style>
+
+</head>
+<body>
+<div id="container">
+	<p>startling</p>
+	<img id="logo" src="img/logo.png"></img>
+</div>
+</body>
+</html>
